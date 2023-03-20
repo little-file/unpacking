@@ -13,7 +13,7 @@ def tar_gz():
     tar_path = input("example /path/to/tarfile.tar: ")
     with tarfile.open(tar_path, "r:gz") as tar:
         tar.extractall()
-def zipfile():
+def zip():
     print(".zip")
     zip_path = input("example /path/to/zipfile.zip:")
     with zipfile.ZipFile(zip_path, 'r') as zip_ref:
@@ -32,7 +32,7 @@ while True:
     elif choice == 2:
         tar_gz()
     elif choice == 3:
-        zipfile() 
+        zip() 
     elif choice == 4:
         break
     else:
